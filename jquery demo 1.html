@@ -226,11 +226,13 @@ LIVE PREVIEW
 
         <script type="text/javascript">
 
-            // Set the text to something else.
-            jQuery("p:first").text ( 'new text' ) ;
-
+            // Prepend "paragraph: " to every p tag.
+            jQuery("p").prepend ( 'paragraph: ' ) ;
         </script>
 
+        <!--
+        [.before()]<tag>[.prepend()]text[.append()]</tag>[.after()]
+        -->
 
     </body>
 </html>
