@@ -207,7 +207,7 @@ LIVE PREVIEW
             </p>
             <p>
                 <label for="email">Email</label>
-                <input type="text" name="email" id="email" />
+                <input type="text" name="email" id="email" value="whatever@nowhere.com" />
             </p>
             <p>
                 <input type="checkbox" name="abc" id="abc" checked="checked" />
@@ -226,8 +226,10 @@ LIVE PREVIEW
 
         <script type="text/javascript">
 
-            // add a class to the samp elements.
-            jQuery("samp").addClass ( 'green_background' ) ;
+            // Get the value of the email address field.
+            var email_address = jQuery('#email').val () ;
+
+            console.log ('email: ' + email_address) ;
 
         </script>
 
