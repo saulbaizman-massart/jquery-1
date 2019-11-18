@@ -226,9 +226,10 @@ LIVE PREVIEW
 
         <script type="text/javascript">
 
-            // Select a p tag, and change its contents.
-            jQuery("p:first").html ( '<p>You have been REPLACED!</p>' ) ;
-            
+            // Get the html of the first paragraph on the page.
+            var first_paragraph_html = jQuery("p").html ( ) ;
+            console.log ( first_paragraph_html ) ;
+
         </script>
 
 
