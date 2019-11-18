@@ -226,10 +226,9 @@ LIVE PREVIEW
 
         <script type="text/javascript">
 
-            // Get the value of the css property background color for the first h2.
-            var background_color = jQuery('h2:first').css ('background-color') ;
-
-            console.log ('background_color: ' + background_color ) ;
+            // Change an existing CSS property, plus or minus its current value.
+            // you'll need a p CSS rule to make this work.
+            jQuery('p').css ('margin-left', '-=10') ;
 
         </script>
 
