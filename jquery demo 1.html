@@ -226,16 +226,10 @@ LIVE PREVIEW
 
         <script type="text/javascript">
 
-            // Loop through every paragraph tag and prepend the number it is.
-            var paragraph_number = 1 ;
-            jQuery('p').each (
-                function () {
-                    $(this).prepend ( paragraph_number + ". " ) ;
-                    // paragraph_number = paragraph_number+1 ; // lame
-                    // paragraph_number += 1 ;                 // also lame
-                    paragraph_number++ ; // voila!
-                }
-            ) ;
+            // This is an example of chaining methods: delay().fadeOut().
+            jQuery('p').on ('mouseover', function () {
+                jQuery(this).delay(1000).fadeOut( 400 );
+            }) ;
 
         </script>
 
