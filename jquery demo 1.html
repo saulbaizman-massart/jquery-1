@@ -226,9 +226,16 @@ LIVE PREVIEW
 
         <script type="text/javascript">
 
-            // Change an existing CSS property, plus or minus its current value.
-            // you'll need a p CSS rule to make this work.
-            jQuery('p').css ('margin-left', '-=10') ;
+            // Loop through every paragraph tag and prepend the number it is.
+            var paragraph_number = 1 ;
+            jQuery('p').each (
+                function () {
+                    $(this).prepend ( paragraph_number + ". " ) ;
+                    // paragraph_number = paragraph_number+1 ; // lame
+                    // paragraph_number += 1 ;                 // also lame
+                    paragraph_number++ ; // voila!
+                }
+            ) ;
 
         </script>
 
